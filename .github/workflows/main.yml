@@ -42,8 +42,8 @@ jobs:
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: |
-          heroku git:remote -a gitactions 
-          git remote -v
+          echo "Setting up Heroku remote"
+          heroku git:remote -a gitactions
 
 
       - name: Deploy to Heroku
