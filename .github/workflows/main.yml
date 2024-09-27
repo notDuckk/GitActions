@@ -48,8 +48,7 @@ jobs:
       - name: Set up Heroku git remote
         run: heroku git:remote -a gitactions
 
-      - name: Unshallow git repository
-        run: git fetch --all --unshallow
+      
 
       - name: Deploy to Heroku
         env:
